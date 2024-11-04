@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title>التكروري</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>بسم الله الرحمن الرحيم</h1>
+    <h1>شجرة عائلة التكروري التميمي</h1>
+
+    <p>
+      هذه شجرة عائلة التكروري التميمي مبتدئة بالجد نورالدين التميمي. وقد عملت
+      على توثيق ما عندي من معلومات بشكل دقيق وترك ما ليس عندي غير محددا حتى يتم
+      جمع المعلومات. وقد استخدمت اللون الأزرق للذكور الذين لهم فروع واللون
+      الأسود للذين ليس لهم فروع. أما اللون البنفسجي فاستخدمته للإنثاث وإن وجد
+      زوج للإنثى وضعته بحيث يظهر عند تحريك المؤشر فوق إسمها. ويمكن التنقل في
+      الشجرة بين الأجداد والأبناء بالضغط على اللون الأزرق. والله ولي التوفيق
+    </p>
+
+    <!--<p style="margin-right: 70%"><span class="hamza male">حمزة</span></p>-->
+
+    <div class="move">
+      <select name="names" id="names">
+        <option disabled selected value>اختر الإسم</option>
+        <option value="nureldin">نورالدين</option>
+        <option value="abdullah">عبدالله نورالدين</option>
+        <option value="hasan">حسن عبدالله نورالدين</option>
+        <option value="numan">نعمان عبدالله نورالدين</option>
+        <option value="abdurahman">عبدالرحمن حسن عبدالله</option>
+        <option value="muhammad">محمد نعمان عبدالله</option>
+        <option value="yusuf001">يوسف نعمان عبدالله</option>
+        <option value="abdulaziz001">عبدالعزيز نعمان عبدالله</option>
+        <option value="hasan001">حسن عبدالرحمن حسن</option>
+        <option value="abdullah001">عبدالله عبدالرحمن حسن</option>
+        <option value="abdulhamid">عبدالحميد عبدالرحمن حسن</option>
+        <option value="osman">عثمان عبدالرحمن حسن</option>
+        <option value="ali">علي عبدالرحمن حسن</option>
+        <option value="amin">أمين عبدالرحمن حسن</option>
+        <option value="ahmad">أحمد محمد نعمان</option>
+        <option value="halil">خليل محمد نعمان</option>
+        <option value="hasan002">محمد حسن عبدالرحمن</option>
+        <option value="yusuf">يوسف عبدالحميد عبدالرحمن</option>
+        <option value="abdulaziz">عبدالعزيز عبدالحميد عبدالرحمن</option>
+        <option value="majed">ماجد عبدالحميد عبدالرحمن</option>
+        <option value="muhammad002">محمد عبدالحميد عبدالرحمن</option>
+        <option value="omar">عمر أحمد محمد</option>
+        <option value="hashem">هاشم أحمد محمد</option>
+        <option value="muhammad003">محمد أحمد محمد</option>
+        <option value="hamdi">حمدي أحمد محمد</option>
+        <option value="muhammad004">محمد خليل محمد</option>
+        <option value="abdulhamid001">عبدالحميد يوسف عبدالحميد</option>
+        <option value="fareed">فريد يوسف عبدالحميد</option>
+        <option value="kamel">كامل يوسف عبدالحميد</option>
+        <option value="munir">منير يوسف عبدالحميد</option>
+        <option value="bashir">بشير يوسف عبدالحميد</option>
+        <option value="fayiz">فايز ماجد عبدالحميد</option>
+        <option value="fawaz">فواز ماجد عبدالحميد</option>
+        <option value="fawzi">فوزي ماجد عبدالحميد</option>
+        <option value="fayeq">فايق ماجد عبدالحميد</option>
+        <option value="fahed">فهد ماجد عبدالحميد</option>
+        <option value="wajeeh">وجيه ماجد عبدالحميد</option>
+        <option value="raed">رائد محمد عبدالحميد</option>
+        <option value="ahmad003">أحمد عمر أحمد</option>
+        <option value="khalid">خالد عمر أحمد</option>
+        <option value="mahmud">محمود عمر أحمد</option>
+        <option value="omran">عمران عمر أحمد</option>
+        <option value="salah">صلاح عمر أحمد</option>
+        <option value="hatem">حاتم عمر أحمد</option>
+        <option value="yunus">يونس محمد أحمد</option>
+        <option value="mahir">ماهر محمد أحمد</option>
+        <option value="hesham">هشام محمد خليل</option>
+        <option value="majed001">ماجد فايز ماجد</option>
+        <option value="marwan">مروان فايز ماجد</option>
+        <option value="mutasem">معتصم فايز ماجد</option>
+        <option value="samer">سامر فايز ماجد</option>
+        <option value="eyad">إياد فواز ماجد</option>
+        <option value="omar001">عمر فواز ماجد</option>
+        <option value="wael">وائل فوزي ماجد</option>
+        <option value="zaid">زيد فوزي ماجد</option>
+        <option value="hamza">حمزة فوزي ماجد</option>
+        <option value="hazem">حازم فايق ماجد</option>
+        <option value="tareq001">طارق أحمد عمر</option>
+        <option value="bilal">بلال أحمد عمر</option>
+        <option value="musa">موسى خالد عمر</option>
+        <option value="ibrahim">إبراهيم محمود عمر</option>
+        <option value="helmi">حلمي محمود عمر</option>
+        <option value="muhammad006">محمد محمود عمر</option>
+        <option value="nidal">نضال عمران عمر</option>
+        <option value="mutaz">معتز عمران عمر</option>
+        <option value="muhammad007">محمد هشام محمد</option>
+        <option value="hakam">حكم هشام محمد</option>
+        <option value="ihsan">إحسان هشام محمد</option>
+        <option value="karam">كرم هشام محمد</option>
+        <option value="shakir">شاكر هشام محمد</option>
+        <option value="shukri">شكري هشام محمد</option>
+      </select>
+      <label for="names">انتقل إلى</label>
+    </div>
+
+    <div class="nureldin male box">
+      <h3>الإسم : نورالدين</h3>
+      <h3>اسم الزوجة: غير محدد</h3>
+      <h2>الأبناء</h2>
+      <span class="abdullah male">عبدالله</span>
+    </div>
+
+    <div class="abdullah male box">
+      <h3>
+        الإسم : عبدالله
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: غير محدد</h3>
+      <h2>الأبناء</h2>
+      <span class="hasan male">حسن</span>
+      <span class="numan male">نعمان</span>
+    </div>
+
+    <div class="hasan male box">
+      <h3>
+        الإسم : حسن
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: غير محدد</h3>
+      <h2>الأبناء</h2>
+      <span class="abdurahman male">عبدالرحمن</span>
+    </div>
+
+    <div class="numan male box">
+      <h3>
+        الإسم : نعمان
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: غير محدد</h3>
+      <h2>الأبناء</h2>
+      <span>غير محدد</span>
+      <span class="muhammad male">محمد</span>
+      <span class="yusuf001 male">يوسف</span>
+      <span class="abdulaziz001 male">عبدالعزيز</span>
+    </div>
+
+    <div class="abdurahman male box">
+      <h3>
+        الإسم : عبدالرحمن
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: صفية الزرو</h3>
+      <h2>الأبناء</h2>
+      <span class="hasan001 male">حسن</span>
+      <span class="abdullah001 male">عبدالله</span>
+      <span class="abdulhamid male">عبدالحميد</span>
+      <span class="osman male">عثمان</span>
+      <span class="ali male">علي</span>
+      <span class="amin male">أمين</span>
+      <span class="female"><abbr title=""> رفقة </abbr></span>
+      <span class="female"
+        ><abbr title="زوجة أحمد محمد نعمان التكروري"> لبقة </abbr></span
+      >
+    </div>
+
+    <div class="muhammad male box">
+      <h3>
+        الإسم : محمد
+        <span class="numan male" style="margin: 0">نعمان</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: غير محدد</h3>
+      <h2>الأبناء</h2>
+      <span class="female">خديجة</span>
+      <span class="ahmad male">أحمد</span>
+      <span class="halil male">خليل</span>
+      <span class="female">رفقة</span>
+      <span class="female">رقية</span>
+    </div>
+
+    <div class="hasan001 male box">
+      <h3>
+        الإسم : حسن
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: أمينة كاتبة بدر</h3>
+      <h2>الأبناء</h2>
+      <span class="female"
+        ><abbr title="زوجة عبدالشكور الزرو"> يسرى </abbr></span
+      >
+      <span class="muhammad001 male">محمد</span>
+      <span class="female"
+        ><abbr title="زوجة بدوي عبدالله عبدالرحمن التكروري"> زهور </abbr></span
+      >
+      <span class="female"><abbr title=""> صبرية </abbr></span>
+    </div>
+
+    <div class="abdullah001 male box">
+      <h3>
+        الإسم : عبدالله
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: غير محدد عمرو</h3>
+      <h2>الأبناء</h2>
+      <span class="female"
+        ><abbr title="زوجة محمد حسن عبدالرحمن التكروري"> سارة </abbr></span
+      >
+      <span class="badawi male">بدوي</span>
+      <span class="female"
+        ><abbr title="زوجة حافظ أمين عبدالرحمن التكروري"> صفية </abbr></span
+      >
+      <span class="female"
+        ><abbr title="زوجة غير محدد أبو عوض"> نعمت </abbr></span
+      >
+      <span class="female"
+        ><abbr title="زوجة غير محدد سندوقة"> حكمت </abbr></span
+      >
+      <h3>اسم الزوجة: غير محدد عمرو</h3>
+      <h2>الأبناء</h2>
+      <span class="abdurahman001 male">عبدالرحمن</span>
+      <span class="female"
+        ><abbr title="زوجة غير محدد شويكي"> نعيمة </abbr></span
+      >
+    </div>
+
+    <div class="abdulhamid male box">
+      <h3>
+        الإسم : عبدالحميد
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: رسمية محمد العسلي</h3>
+      <h2>الأبناء</h2>
+      <span class="yusuf male">يوسف</span>
+      <span class="female"
+        ><abbr title="زوجة مصباح سعيد عودة"> نظمية </abbr></span
+      >
+      <span class="abdulaziz male">عبدالعزيز</span>
+      <span class="female"
+        ><abbr title="زوجة فلاح سعيد عودة"> فوزية </abbr></span
+      >
+      <span class="female"
+        ><abbr title="زوجة صالح عثمان عبدالحميد التكروري"> انشراح </abbr></span
+      >
+      <span class="majed male">ماجد</span>
+      <span class="muhammad002 male">محمد</span>
+      <span class="female"
+        ><abbr title="زوجة محمد أحمد محمد التكروري"> عزية </abbr></span
+      >
+      <h3>اسم الزوجة: بهيجة نيروخ</h3>
+      <h2>الأبناء</h2>
+      <span class="ismael male">اسماعيل</span>
+      <span class="ishaq male">اسحاق</span>
+    </div>
+
+    <div class="osman male box">
+      <h3>
+        الإسم : عثمان
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: غيرمحدد كاتبة</h3>
+      <h2>الأبناء</h2>
+      <span class="female"
+        ><abbr title="زوجة يوسف عبدالحميد عبدالرحمن التكروري">
+          خيرية
+        </abbr></span
+      >
+      <span class="saleh male">صالح</span>
+      <span class="darwish male">درويش</span>
+      <span class="noor male">نور الدين</span>
+      <span class="female"
+        ><abbr title="زوجة صبحي علي عبدالرحمن التكروري"> حورية </abbr></span
+      >
+      <span class="yassin male">ياسين</span>
+      <span class="sadeq male">صاديق</span>
+      <span class="zeen male"> زين الدين</span>
+    </div>
+
+    <div class="ali male box">
+      <h3>
+        الإسم : علي
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: غيرمحدد عبدالباسط</h3>
+      <h2>الأبناء</h2>
+      <span class="sobhi male">صبحي</span>
+      <span class="ahmad001 male">أحمد</span>
+      <span class="arafat male">عرفات</span>
+      <span class="female"><abbr title=""> ميسر </abbr></span>
+      <span class="female"><abbr title=""> دولت </abbr></span>
+      <span class="female"><abbr title=""> شريفة </abbr></span>
+      <span class="female"><abbr title=""> عالية</abbr></span>
+      <span class="harun male">هارون</span>
+      <span class="sharif male">شريف</span>
+      <span class="dawoud male">داوود</span>
+      <span class="abdulhalim male">عبدالحليم</span>
+      <span class="baraka male">بركة</span>
+    </div>
+
+    <div class="amin male box">
+      <h3>
+        الإسم : أمين
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: روزة الخطيب</h3>
+      <h2>الأبناء</h2>
+      <span class="hafiz male">حافظ</span>
+      <span class="female"><abbr title="">بهيجة</abbr></span>
+      <span class="dahir male">طاهر</span>
+      <span class="jawdi male">جودي</span>
+      <span class="abdu male">عبدة</span>
+    </div>
+
+    <div class="ahmad male box">
+      <h3>
+        الإسم : أحمد
+        <span class="muhammad male" style="margin: 0">محمد</span>
+        <span class="numan male" style="margin: 0">نعمان</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: لبقة عبدالرحمن حسن التكروري</h3>
+      <h2>الأبناء</h2>
+      <span>حسين</span>
+      <span class="omar male">عمر</span>
+      <span class="hashem male">هاشم</span>
+      <span class="female"
+        ><abbr title="زوجة محمد محمود قراجة">زهرة</abbr></span
+      >
+      <span class="muhammad003 male">محمد</span>
+      <span class="hamdi male">حمدي</span>
+      <span class="female"
+        ><abbr title="زوجة منير محمد محمود قراجة">سعدية</abbr></span
+      >
+      <span>سعدي</span>
+      <span class="female"
+        ><abbr title="زوجة ماجد عبدالحميد عبدالرحمن التكروري">سميحة</abbr></span
+      >
+      <h3>اسم الزوجة: حليمة أبو دنهش</h3>
+      <h2>الأبناء</h2>
+      <span class="female"
+        ><abbr title="زوجة أحمد علي عبدالرحمن التكروري">بهية</abbr></span
+      >
+      <span class="female"
+        ><abbr title="زوجة عبدالحي شاهين الخطيب">فخرية</abbr></span
+      >
+      <span>سليم</span>
+    </div>
+
+    <div class="halil male box">
+      <h3>
+        الإسم : خليل
+        <span class="muhammad male" style="margin: 0">محمد</span>
+        <span class="numan male" style="margin: 0">نعمان</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: غير محدد</h3>
+      <h2>الأبناء</h2>
+      <span class="muhammad004 male">محمد</span>
+    </div>
+
+    <div class="muhammad001 male box">
+      <h3>
+        الإسم : محمد
+        <span class="hasan001 male" style="margin: 0">حسن</span>
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: سارة عبدالله عبدالرحمن التكروري</h3>
+      <h2>الأبناء</h2>
+      <span class="hasan002 male">حسن</span>
+      <span class="female"
+        ><abbr title="زوجة عبداللطيف أمين عبدالرحمن التكروري">
+          أمينة
+        </abbr></span
+      >
+      <span class="jamil male">جميل</span>
+      <span class="female"><abbr title="زوجة حمزة الزرو"> نصرة </abbr></span>
+      <span class="rafik male">رفيق</span>
+      <span class="saed male">سعيد</span>
+    </div>
+
+    <div class="yusuf male box">
+      <h3>
+        الإسم : يوسف
+        <span class="abdulhamid male" style="margin: 0">عبدالحميد</span>
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: خيرية عثمان عبدالرحمن التكروري</h3>
+      <h2>الأبناء</h2>
+      <span class="abdulhamid001 male">عبدالحميد</span>
+      <span class="fareed male">فريد</span>
+      <span class="kamel male">كامل</span>
+      <span class="sami male">سامي</span>
+      <span class="munir male">منير</span>
+      <span class="female"
+        ><abbr title="زوجة عبدالرحيم الشريف">حياة</abbr></span
+      >
+      <span class="female"><abbr title="زوجة حمدي فنون">نجاة</abbr></span>
+      <span class="bashir male">بشير</span>
+      <span class="female"><abbr title="">أمال</abbr></span>
+      <span class="nayef male">نايف</span>
+      <span class="nihad male">نهاد</span>
+    </div>
+
+    <div class="abdulaziz male box">
+      <h3>
+        الإسم : عبدالعزيز
+        <span class="abdulhamid male" style="margin: 0">عبدالحميد</span>
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: بهيجة أمين عبدالرحمن التكروري</h3>
+      <h2>الأبناء</h2>
+      <span class="female"><abbr title="">عايدة</abbr></span>
+      <span>عزمي</span>
+      <span class="female"><abbr title="">رسمية</abbr></span>
+      <span class="female"><abbr title="">نادية</abbr></span>
+      <span class="female"
+        ><abbr title="زوجة فايز ماجد عبدالحميد التكروري">سامية</abbr></span
+      >
+      <span class="female"><abbr title="">بشرى</abbr></span>
+      <span class="female"><abbr title="">افتخار</abbr></span>
+      <span class="imad male">عماد</span>
+      <span class="female"><abbr title="">ريما</abbr></span>
+      <span class="female"><abbr title="">تهاني</abbr></span>
+      <span class="waleed male">وليد</span>
+      <span class="saad male">سعد</span>
+    </div>
+
+    <div class="majed male box">
+      <h3>
+        الإسم : ماجد
+        <span class="abdulhamid male" style="margin: 0">عبدالحميد</span>
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: سميحة أحمد محمد التكروري</h3>
+      <h2>الأبناء</h2>
+      <span class="fayiz male">فايز</span>
+      <span class="fawaz male">فواز</span>
+      <span class="fawzi male">فوزي</span>
+      <span class="female">فايزة</span>
+      <span class="female"><abbr title="زوجة يوسف دوفش">فدوى</abbr></span>
+      <span class="fayeq male">فايق</span>
+      <span class="fahed male">فهد</span>
+      <span class="female"
+        ><abbr title="زوجة بشير يوسف عبدالحميد التكروري">فايدة</abbr></span
+      >
+      <span class="female"><abbr title="زوجة جواد الأشهب">سهى</abbr></span>
+      <span class="wajeeh male">وجيه</span>
+      <span class="female"><abbr title="زوجة يوسف دوفش">سمر</abbr></span>
+    </div>
+
+    <div class="muhammad002 male box">
+      <h3>
+        الإسم : محمد
+        <span class="abdulhamid male" style="margin: 0">عبدالحميد</span>
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: إنعام زيتون</h3>
+      <h2>الأبناء</h2>
+      <span class="female">ميمي</span>
+      <span class="female"
+        ><abbr title="زوجة وليد عبدالعزيز عبدالرحمن التكروري">سوسن</abbr></span
+      >
+      <span class="raed male">رائد</span>
+      <span class="female"><abbr title="زوجة غير محدد الموصلي">مجد</abbr></span>
+    </div>
+
+    <div class="omar male box">
+      <h3>
+        الإسم : عمر
+        <span class="ahmad male" style="margin: 0">أحمد</span>
+        <span class="muhammad male" style="margin: 0">محمد</span>
+        <span class="numan male" style="margin: 0">نعمان</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: زكية جميل عبدالرزاق سلطان</h3>
+      <h2>الأبناء</h2>
+      <span class="ahmad003 male">أحمد</span>
+      <span class="khalid male">خالد</span>
+      <span class="mahmud male">محمود</span>
+      <span class="omran male">عمران</span>
+      <span>زياد</span>
+      <span class="female"
+        ><abbr title="زوجة هشام هاشم أحمد التكروري">منوليا</abbr></span
+      >
+      <span class="salah male">صلاح</span>
+      <span class="female"
+        ><abbr title="زوجة رياض محمد محمود قراجة">هناء</abbr></span
+      >
+      <span class="female"
+        ><abbr title="زوجة فواز ماجد عبدالحميد التكروري">ميسون</abbr></span
+      >
+      <span class="female"
+        ><abbr title="زوجة فوزي ماجد عبدالحميد التكروري">نبيلة</abbr></span
+      >
+      <span class="female"><abbr title="زوجة محمد ياسر دويك">بشرى</abbr></span>
+      <span class="hatem male">حاتم</span>
+    </div>
+
+    <div class="hashem male box">
+      <h3>
+        الإسم : هاشم
+        <span class="ahmad male" style="margin: 0">أحمد</span>
+        <span class="muhammad male" style="margin: 0">محمد</span>
+        <span class="numan male" style="margin: 0">نعمان</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: نجية بهية التميمي</h3>
+      <h2>الأبناء</h2>
+      <span class="hesham001 male">هشام</span>
+      <span class="female"><abbr title="زوجة أحمد الصباغ">هيام</abbr></span>
+      <span class="fuad001 male">فؤاد</span>
+      <span class="eid male">عيد</span>
+      <span class="hassan male">حسان</span>
+      <span class="female"
+        ><abbr title="زوجة إسحاق عبدالحميد عبدالرحمن التكروري">هالة</abbr></span
+      >
+      <span class="yasser male">ياسر</span>
+      <span class="female"><abbr title="زوجة غير محدد">سناء</abbr></span>
+    </div>
+
+    <div class="muhammad003 male box">
+      <h3>
+        الإسم : محمد
+        <span class="ahmad male" style="margin: 0">أحمد</span>
+        <span class="muhammad male" style="margin: 0">محمد</span>
+        <span class="numan male" style="margin: 0">نعمان</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: عزية عبدالحميد عبدالرحمن التكروري</h3>
+      <h2>الأبناء</h2>
+      <span class="yunus male">يونس</span>
+      <span class="gandi male">غاندي</span>
+      <span class="jamal male">جمال</span>
+      <span class="female"><abbr title="زوجة أحمد أبو عصبة">لبقة</abbr></span>
+      <span>سمير</span>
+      <span class="mahir male">ماهر</span>
+      <span class="female"><abbr title="زوجة غير محدد دويك">مها</abbr></span>
+    </div>
+
+    <div class="hamdi male box">
+      <h3>
+        الإسم : حمدي
+        <span class="ahmad male" style="margin: 0">أحمد</span>
+        <span class="muhammad male" style="margin: 0">محمد</span>
+        <span class="numan male" style="margin: 0">نعمان</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: غير محدد</h3>
+      <h2>الأبناء</h2>
+      <span>وليد</span>
+      <span class="female">سهيلة</span>
+      <span class="female">أمل</span>
+      <span>جواد</span>
+      <span class="female">نوال</span>
+    </div>
+
+    <div class="muhammad004 male box">
+      <h3>
+        الإسم : محمد
+        <span class="halil male" style="margin: 0">خليل</span>
+        <span class="muhammad male" style="margin: 0">محمد</span>
+        <span class="numan male" style="margin: 0">نعمان</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: غير محدد</h3>
+      <h2>الأبناء</h2>
+      <span class="hesham male">هشام</span>
+      <span class="female"
+        ><abbr title="زوجة عبدالحي كاتبة بدر">إلهام</abbr></span
+      >
+      <span>سعيد</span>
+      <span class="jawad male">جواد</span>
+    </div>
+
+    <div class="abdulhamid001 male box">
+      <h3>
+        الإسم : عبدالحميد
+        <span class="yusuf male" style="margin: 0">يوسف</span>
+        <span class="abdulhamid male" style="margin: 0">عبدالحميد</span>
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: عدوية الجنيدي</h3>
+      <h2>الأبناء</h2>
+      <span class="female"><abbr title="">سماح</abbr></span>
+      <span class="female"><abbr title="">سلام</abbr></span>
+      <span class="majed001 male">يوسف</span>
+      <span class="marwan male">سيف</span>
+      <span class="mutasem male">سامر</span>
+    </div>
+
+    <div class="fareed male box">
+      <h3>
+        الإسم : فريد
+        <span class="yusuf male" style="margin: 0">يوسف</span>
+        <span class="abdulhamid male" style="margin: 0">عبدالحميد</span>
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: نادرة الشعراوي</h3>
+      <h2>الأبناء</h2>
+      <span class="female"><abbr title="">مرام</abbr></span>
+      <span class="murad male">مراد</span>
+      <span class="female"><abbr title="">منار</abbr></span>
+    </div>
+
+    <div class="kamel male box">
+      <h3>
+        الإسم : كامل
+        <span class="yusuf male" style="margin: 0">يوسف</span>
+        <span class="abdulhamid male" style="margin: 0">عبدالحميد</span>
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: غير محدد</h3>
+      <h2>الأبناء</h2>
+      <span class="ashraf male">أشرف</span>
+      <span class="ahmad002 male">أحمد</span>
+    </div>
+
+    <div class="munir male box">
+      <h3>
+        الإسم : منير
+        <span class="yusuf male" style="margin: 0">يوسف</span>
+        <span class="abdulhamid male" style="margin: 0">عبدالحميد</span>
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: كفا القيسي</h3>
+      <h2>الأبناء</h2>
+      <span class="bashar male">بشار</span>
+      <span class="bahaa male">بهاء</span>
+      <span class="yazan male">يزن</span>
+      <span class="muhammad005 male">محمد</span>
+      <span class="female"><abbr title="">دعاء</abbr></span>
+    </div>
+
+    <div class="bashir male box">
+      <h3>
+        الإسم : بشير
+        <span class="yusuf male" style="margin: 0">يوسف</span>
+        <span class="abdulhamid male" style="margin: 0">عبدالحميد</span>
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: فايدة ماجد عبدالحميد التكروري</h3>
+      <h2>الأبناء</h2>
+      <span class="female"><abbr title="">خيرية</abbr></span>
+      <span class="bashar male">منذر</span>
+      <span>صهيب</span>
+      <span class="female">أسماء</span>
+      <span>أسامة</span>
+      <span>مالك</span>
+    </div>
+
+    <div class="fayiz male box">
+      <h3>
+        الإسم : فايز
+        <span class="majed male" style="margin: 0">ماجد</span>
+        <span class="abdulhamid male" style="margin: 0">عبدالحميد</span>
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: سامية عبدالعزيز عبدالحميد التكروري</h3>
+      <h2>الأبناء</h2>
+      <span class="majed001 male">ماجد</span>
+      <span class="marwan male">مروان</span>
+      <span class="female">ميس</span>
+      <span class="mutasem male">معتصم</span>
+      <span class="samer male">سامر</span>
+    </div>
+
+    <div class="fawaz male box">
+      <h3>
+        الإسم : فواز
+        <span class="majed male" style="margin: 0">ماجد</span>
+        <span class="abdulhamid male" style="margin: 0">عبدالحميد</span>
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: ميسون عمر أحمد التميمي</h3>
+      <h2>الأبناء</h2>
+      <span class="female"><abbr title="زوجة هاني">سميحة</abbr></span>
+      <span class="eyad male">إياد</span>
+      <span class="omar001 male">عمر</span>
+      <span>غيث</span>
+      <span class="female">سندس</span>
+    </div>
+
+    <div class="fawzi box">
+      <h3>
+        الإسم : فوزي
+        <span class="majed male" style="margin: 0">ماجد</span>
+        <span class="abdulhamid male" style="margin: 0">عبدالحميد</span>
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: نبيلة عمر أحمد التميمي</h3>
+      <h2>الأبناء</h2>
+      <span class="wael male">وائل</span>
+      <span class="zaid male">زيد</span>
+      <span class="hamza male">حمزة</span>
+      <span>عبدالله</span>
+      <span>عبدالرحمن</span>
+    </div>
+
+    <div class="fayeq male box">
+      <h3>
+        الإسم : فايق
+        <span class="majed male" style="margin: 0">ماجد</span>
+        <span class="abdulhamid male" style="margin: 0">عبدالحميد</span>
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: لينا هاشم الحموري</h3>
+      <h2>الأبناء</h2>
+      <span class="hazem male">حازم</span>
+      <span class="female"><abbr title="">ندى</abbr></span>
+      <span>مصطفى</span>
+      <span>محمد</span>
+      <span>حسين</span>
+      <span class="female">هبة</span>
+    </div>
+
+    <div class="fahed male box">
+      <h3>
+        الإسم : فهد
+        <span class="majed male" style="margin: 0">ماجد</span>
+        <span class="abdulhamid male" style="margin: 0">عبدالحميد</span>
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: سوسن الحموري</h3>
+      <h2>الأبناء</h2>
+      <span class="female"><abbr title="">آية</abbr></span>
+      <span>أنس</span>
+      <span>عبادة</span>
+      <span class="female">إيمان</span>
+    </div>
+
+    <div class="wajeeh male box">
+      <h3>
+        الإسم : وجيه
+        <span class="majed male" style="margin: 0">ماجد</span>
+        <span class="abdulhamid male" style="margin: 0">عبدالحميد</span>
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: عالية سنقرط</h3>
+      <h2>الأبناء</h2>
+      <span class="female">إيناس</span>
+      <span class="female">رزان</span>
+      <span class="female">ريم</span>
+      <span class="female">بيان</span>
+      <span>فراس</span>
+      <span>ابراهيم</span>
+    </div>
+
+    <div class="raed male box">
+      <h3>
+        الإسم : رائد
+        <span class="muhammad002 male" style="margin: 0">محمد</span>
+        <span class="abdulhamid male" style="margin: 0">عبدالحميد</span>
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: فاطمة المصري</h3>
+      <h2>الأبناء</h2>
+      <span>محمد</span>
+      <span>يحيى</span>
+    </div>
+
+    <div class="ahmad003 male box">
+      <h3>
+        الإسم : أحمد
+        <span class="omar male" style="margin: 0">عمر</span>
+        <span class="ahmad male" style="margin: 0">أحمد</span>
+        <span class="muhammad male" style="margin: 0">محمد</span>
+        <span class="numan male" style="margin: 0">نعمان</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: سناء ناصر الدين</h3>
+      <h2>الأبناء</h2>
+      <span class="female"
+        ><abbr title="زوجة إبراهيم الحرباوي">خلود</abbr></span
+      >
+      <span class="female"
+        ><abbr title="زوجة عبدالمغني النتشة">ديمة</abbr></span
+      >
+      <span class="tareq001 male">طارق</span>
+      <span class="bilal male">بلال</span>
+      <span>محمد</span>
+    </div>
+
+    <div class="khalid male box">
+      <h3>
+        الإسم : خالد
+        <span class="omar male" style="margin: 0">عمر</span>
+        <span class="ahmad male" style="margin: 0">أحمد</span>
+        <span class="muhammad male" style="margin: 0">محمد</span>
+        <span class="numan male" style="margin: 0">نعمان</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: حنان قراجة</h3>
+      <h2>الأبناء</h2>
+      <span class="omar002 male">عمر</span>
+      <span class="musa male">موسى</span>
+      <span class="female">ياسمين</span>
+      <span class="female">سماح</span>
+      <span class="female">شهرزاد</span>
+      <span>ياسين</span>
+      <span class="female">صفاء</span>
+    </div>
+
+    <div class="mahmud male box">
+      <h3>
+        الإسم : محمود
+        <span class="omar male" style="margin: 0">عمر</span>
+        <span class="ahmad male" style="margin: 0">أحمد</span>
+        <span class="muhammad male" style="margin: 0">محمد</span>
+        <span class="numan male" style="margin: 0">نعمان</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: سوسن جميل سلطان</h3>
+      <h2>الأبناء</h2>
+      <span class="female"><abbr title="زوجة طلعت أبو رجب">منال</abbr></span>
+      <span class="female"
+        ><abbr title="زوجة وائل جميل أبو عدس">ميساء</abbr></span
+      >
+      <span class="female">زكية</span>
+      <span class="female"
+        ><abbr title="زوجة هاشم هشام هاشم التكروري">هبة</abbr></span
+      >
+      <span class="female"><abbr title="زوجة مروان غير محدد">إيمان</abbr></span>
+      <span class="female"><abbr title="زوجة غير محدد مرار">هداية</abbr></span>
+      <span class="female"><abbr title="زوجة عبدالغفار سلطان">آيات</abbr></span>
+      <span class="ibrahim male">ابراهيم</span>
+      <span class="helmi male">حلمي</span>
+      <span class="muhammad006 male">محمد</span>
+    </div>
+
+    <div class="omran male box">
+      <h3>
+        الإسم : عمران
+        <span class="omar male" style="margin: 0">عمر</span>
+        <span class="ahmad male" style="margin: 0">أحمد</span>
+        <span class="muhammad male" style="margin: 0">محمد</span>
+        <span class="numan male" style="margin: 0">نعمان</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: مروة ناصر الدين</h3>
+      <h2>الأبناء</h2>
+      <span class="female"><abbr title="زوجة بلال العامري">هديل</abbr></span>
+      <span class="nidal male">نضال</span>
+      <span class="mutaz male">معتز</span>
+      <span>معن</span>
+      <span class="female">هالة</span>
+      <span class="female"><abbr title="زوجة إبراهيم زلوم">أسماء</abbr></span>
+      <span>عمار</span>
+      <span class="female">رزان</span>
+      <span class="female">ندى</span>
+    </div>
+
+    <div class="salah male box">
+      <h3>
+        الإسم : صلاح
+        <span class="omar male" style="margin: 0">عمر</span>
+        <span class="ahmad male" style="margin: 0">أحمد</span>
+        <span class="muhammad male" style="margin: 0">محمد</span>
+        <span class="numan male" style="margin: 0">نعمان</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: اقبال سلطان</h3>
+      <h2>الأبناء</h2>
+      <span class="female"><abbr title="غير محدد">غيداء</abbr></span>
+      <span class="female"><abbr title="غير محدد">آلاء</abbr></span>
+      <span class="female">عروب</span>
+      <span>تميم</span>
+    </div>
+
+    <div class="hatem male box">
+      <h3>
+        الإسم : حاتم
+        <span class="omar male" style="margin: 0">عمر</span>
+        <span class="ahmad male" style="margin: 0">أحمد</span>
+        <span class="muhammad male" style="margin: 0">محمد</span>
+        <span class="numan male" style="margin: 0">نعمان</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: سميرة شويكي</h3>
+      <h2>الأبناء</h2>
+      <span class="female"><abbr title="زوجة عنان الشويكي">جنات</abbr></span>
+      <span>علي</span>
+      <span class="female"><abbr title="زوجة فواز النتشة">شهد</abbr></span>
+      <span class="female">زينب</span>
+      <span>محمد</span>
+      <span>يوسف</span>
+      <span class="female">جنى</span>
+      <span>كريم</span>
+    </div>
+
+    <div class="yunus male box">
+      <h3>
+        الإسم : يونس
+        <span class="muhammad003 male" style="margin: 0">محمد</span>
+        <span class="ahmad male" style="margin: 0">أحمد</span>
+        <span class="muhammad male" style="margin: 0">محمد</span>
+        <span class="numan male" style="margin: 0">نعمان</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: صباح صالح عثمان التكروري</h3>
+      <h2>الأبناء</h2>
+      <span class="female">سمر</span>
+      <span>محمد</span>
+      <span>سعدي</span>
+      <span>باسل</span>
+    </div>
+
+    <div class="mahir male box">
+      <h3>
+        الإسم : ماهر
+        <span class="muhammad003 male" style="margin: 0">محمد</span>
+        <span class="ahmad male" style="margin: 0">أحمد</span>
+        <span class="muhammad male" style="margin: 0">محمد</span>
+        <span class="numan male" style="margin: 0">نعمان</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: غير محدد</h3>
+      <h2>الأبناء</h2>
+      <span class="female">عزيزة</span>
+      <span class="female">عائشة</span>
+    </div>
+
+    <div class="hesham male box">
+      <h3>
+        الإسم : هشام
+        <span class="muhammad004 male" style="margin: 0">محمد</span>
+        <span class="halil male" style="margin: 0">خليل</span>
+        <span class="muhammad male" style="margin: 0">محمد</span>
+        <span class="numan male" style="margin: 0">نعمان</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: رفقة كاتبة بدر</h3>
+      <h2>الأبناء</h2>
+      <span class="female"><abbr title="زوجة فضل الزرو">سهاد</abbr></span>
+      <span class="muhammad007 male">محمد</span>
+      <span class="hakam male">حكم</span>
+      <span class="ihsan male">احسان</span>
+      <span class="female"
+        ><abbr title="زوجة محمد زكي عبدالحي كاتبة بدر">سائدة</abbr></span
+      >
+      <span class="karam male">كرم</span>
+      <span class="shakir male">شاكر</span>
+      <span class="shukri male">شكري</span>
+    </div>
+
+    <div class="majed001 male box">
+      <h3>
+        الإسم : ماجد
+        <span class="fayiz male" style="margin: 0">فايز</span>
+        <span class="majed male" style="margin: 0">ماجد</span>
+        <span class="abdulhamid male" style="margin: 0">عبدالحميد</span>
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: أماني مطاحن</h3>
+      <h2>الأبناء</h2>
+      <span>فايز</span>
+      <span class="female">إسراء</span>
+    </div>
+
+    <div class="marwan male box">
+      <h3>
+        الإسم : مروان
+        <span class="fayiz male" style="margin: 0">فايز</span>
+        <span class="majed male" style="margin: 0">ماجد</span>
+        <span class="abdulhamid male" style="margin: 0">عبدالحميد</span>
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: نور التل</h3>
+      <h2>الأبناء</h2>
+      <span>محمد</span>
+      <span class="female">نائلة</span>
+    </div>
+
+    <div class="mutasem male box">
+      <h3>
+        الإسم : معتصم
+        <span class="fayiz male" style="margin: 0">فايز</span>
+        <span class="majed male" style="margin: 0">ماجد</span>
+        <span class="abdulhamid male" style="margin: 0">عبدالحميد</span>
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: سوزان الخليلي</h3>
+      <h2>الأبناء</h2>
+      <span>قصي</span>
+    </div>
+
+    <div class="samer male box">
+      <h3>
+        الإسم : سامر
+        <span class="fayiz male" style="margin: 0">فايز</span>
+        <span class="majed male" style="margin: 0">ماجد</span>
+        <span class="abdulhamid male" style="margin: 0">عبدالحميد</span>
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: سامية أو كويك</h3>
+      <h2>الأبناء</h2>
+      <span>عمر</span>
+    </div>
+
+    <div class="eyad male box">
+      <h3>
+        الإسم : إياد
+        <span class="fawaz male" style="margin: 0">فواز</span>
+        <span class="majed male" style="margin: 0">ماجد</span>
+        <span class="abdulhamid male" style="margin: 0">عبدالحميد</span>
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: ساجدة محطة</h3>
+      <h2>الأبناء</h2>
+      <span>فواز</span>
+      <span class="female">سلمى</span>
+      <span>آدم</span>
+    </div>
+
+    <div class="omar001 male box">
+      <h3>
+        الإسم : عمر
+        <span class="fawaz male" style="margin: 0">فواز</span>
+        <span class="majed male" style="margin: 0">ماجد</span>
+        <span class="abdulhamid male" style="margin: 0">عبدالحميد</span>
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: منار عثمان صالح التكروري</h3>
+      <h2>الأبناء</h2>
+      <span>صلاح</span>
+      <span>يامن</span>
+    </div>
+
+    <div class="wael male box">
+      <h3>
+        الإسم : وائل
+        <span class="fawzi male" style="margin: 0">فوزي</span>
+        <span class="majed male" style="margin: 0">ماجد</span>
+        <span class="abdulhamid male" style="margin: 0">عبدالحميد</span>
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: ديمة شويكي</h3>
+      <h2>الأبناء</h2>
+      <span class="female">رهف</span>
+      <span class="female">رؤى</span>
+      <span>فوزي</span>
+      <span>عمر</span>
+    </div>
+
+    <div class="zaid male box">
+      <h3>
+        الإسم : زيد
+        <span class="fawzi male" style="margin: 0">فوزي</span>
+        <span class="majed male" style="margin: 0">ماجد</span>
+        <span class="abdulhamid male" style="margin: 0">عبدالحميد</span>
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: آلاء وائل أبو ميزر</h3>
+      <h2>الأبناء</h2>
+      <span>أسامة</span>
+      <span class="female">نبيلة</span>
+    </div>
+
+    <div class="hamza male box">
+      <h3>
+        الإسم : حمزة
+        <span class="fawzi male" style="margin: 0">فوزي</span>
+        <span class="majed male" style="margin: 0">ماجد</span>
+        <span class="abdulhamid male" style="margin: 0">عبدالحميد</span>
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: سميرة وائل جميل أبو عدس</h3>
+      <h2>الأبناء</h2>
+      <span class="female">دعاء</span>
+      <span>محمد</span>
+    </div>
+
+    <div class="hazem male box">
+      <h3>
+        الإسم : حازم
+        <span class="fayeq male" style="margin: 0">فايق</span>
+        <span class="majed male" style="margin: 0">ماجد</span>
+        <span class="abdulhamid male" style="margin: 0">عبدالحميد</span>
+        <span class="abdurahman male" style="margin: 0">عبدالرحمن</span>
+        <span class="hasan male" style="margin: 0">حسن</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: غيرمحدد الحموري</h3>
+      <h2>الأبناء</h2>
+      <span>فايق</span>
+      <span>يوسف</span>
+    </div>
+
+    <div class="tareq001 male box">
+      <h3>
+        الإسم : طارق
+        <span class="ahmad003 male" style="margin: 0">أحمد</span>
+        <span class="omar male" style="margin: 0">عمر</span>
+        <span class="ahmad male" style="margin: 0">أحمد</span>
+        <span class="muhammad male" style="margin: 0">محمد</span>
+        <span class="numan male" style="margin: 0">نعمان</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: روان سليمان شحادة</h3>
+      <h2>الأبناء</h2>
+      <span class="female">فرح</span>
+      <span class="female">رغد</span>
+      <span>أحمد</span>
+      <span class="female">زينة</span>
+      <span class="female">سلمى</span>
+    </div>
+
+    <div class="bilal male box">
+      <h3>
+        الإسم : بلال
+        <span class="ahmad003 male" style="margin: 0">أحمد</span>
+        <span class="omar male" style="margin: 0">عمر</span>
+        <span class="ahmad male" style="margin: 0">أحمد</span>
+        <span class="muhammad male" style="margin: 0">محمد</span>
+        <span class="numan male" style="margin: 0">نعمان</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: نور الزعتري</h3>
+      <h2>الأبناء</h2>
+      <span>يوسف</span>
+      <span class="female">سناء</span>
+      <span>محمد</span>
+      <span class="female">سوار</span>
+    </div>
+
+    <div class="musa male box">
+      <h3>
+        الإسم : موسى
+        <span class="khalid male" style="margin: 0">خالد</span>
+        <span class="omar male" style="margin: 0">عمر</span>
+        <span class="ahmad male" style="margin: 0">أحمد</span>
+        <span class="muhammad male" style="margin: 0">محمد</span>
+        <span class="numan male" style="margin: 0">نعمان</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: غير محدد</h3>
+      <h2>الأبناء</h2>
+      <span>يوسف</span>
+    </div>
+
+    <div class="ibrahim male box">
+      <h3>
+        الإسم : إبراهيم
+        <span class="mahmud male" style="margin: 0">محمود</span>
+        <span class="omar male" style="margin: 0">عمر</span>
+        <span class="ahmad male" style="margin: 0">أحمد</span>
+        <span class="muhammad male" style="margin: 0">محمد</span>
+        <span class="numan male" style="margin: 0">نعمان</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: شفاء شلودي</h3>
+      <h2>الأبناء</h2>
+      <span>محمود</span>
+      <span>صهيب</span>
+      <span class="female">زكية</span>
+    </div>
+
+    <div class="helmi male box">
+      <h3>
+        الإسم : حلمي
+        <span class="mahmud male" style="margin: 0">محمود</span>
+        <span class="omar male" style="margin: 0">عمر</span>
+        <span class="ahmad male" style="margin: 0">أحمد</span>
+        <span class="muhammad male" style="margin: 0">محمد</span>
+        <span class="numan male" style="margin: 0">نعمان</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: ياسمين المصري</h3>
+      <h2>الأبناء</h2>
+      <span class="female">سوسن</span>
+      <span>تميم</span>
+    </div>
+
+    <div class="muhammad006 male box">
+      <h3>
+        الإسم : محمد
+        <span class="omran male" style="margin: 0">محمود</span>
+        <span class="omar male" style="margin: 0">عمر</span>
+        <span class="ahmad male" style="margin: 0">أحمد</span>
+        <span class="muhammad male" style="margin: 0">محمد</span>
+        <span class="numan male" style="margin: 0">نعمان</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: مليحة ناصر الدين</h3>
+      <h2>الأبناء</h2>
+      <span class="female">جود</span>
+    </div>
+
+    <div class="nidal male box">
+      <h3>
+        الإسم : نضال
+        <span class="omran male" style="margin: 0">عمران</span>
+        <span class="omar male" style="margin: 0">عمر</span>
+        <span class="ahmad male" style="margin: 0">أحمد</span>
+        <span class="muhammad male" style="margin: 0">محمد</span>
+        <span class="numan male" style="margin: 0">نعمان</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: أرب الشريف</h3>
+      <h2>الأبناء</h2>
+      <span>عمران</span>
+      <span class="female">سدرة</span>
+    </div>
+
+    <div class="mutaz male box">
+      <h3>
+        الإسم : معتز
+        <span class="omran male" style="margin: 0">عمران</span>
+        <span class="omar male" style="margin: 0">عمر</span>
+        <span class="ahmad male" style="margin: 0">أحمد</span>
+        <span class="muhammad male" style="margin: 0">محمد</span>
+        <span class="numan male" style="margin: 0">نعمان</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: أنس المحتسب</h3>
+      <h2>الأبناء</h2>
+      <span class="female">مروة</span>
+      <span>آدم</span>
+    </div>
+
+    <div class="muhammad007 male box">
+      <h3>
+        الإسم : محمد
+        <span class="hesham male" style="margin: 0">هشام</span>
+        <span class="muhammad004 male" style="margin: 0">محمد</span>
+        <span class="halil male" style="margin: 0">خليل</span>
+        <span class="muhammad male" style="margin: 0">محمد</span>
+        <span class="numan male" style="margin: 0">نعمان</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: غير محدد</h3>
+      <h2>الأبناء</h2>
+      <span>هشام</span>
+      <span class="female">رفقة</span>
+      <span class="female">سهى</span>
+      <span>سعيد</span>
+      <span>خليل</span>
+    </div>
+
+    <div class="hakam male box">
+      <h3>
+        الإسم : حكم
+        <span class="hesham male" style="margin: 0">هشام</span>
+        <span class="muhammad004 male" style="margin: 0">محمد</span>
+        <span class="halil male" style="margin: 0">خليل</span>
+        <span class="muhammad male" style="margin: 0">محمد</span>
+        <span class="numan male" style="margin: 0">نعمان</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: غير محدد</h3>
+      <h2>الأبناء</h2>
+      <span>علاء</span>
+      <span class="female">علا</span>
+      <span>عزيز</span>
+      <span>عبدالرحمن</span>
+    </div>
+
+    <div class="ihsan male box">
+      <h3>
+        الإسم : إحسان
+        <span class="hesham male" style="margin: 0">هشام</span>
+        <span class="muhammad004 male" style="margin: 0">محمد</span>
+        <span class="halil male" style="margin: 0">خليل</span>
+        <span class="muhammad male" style="margin: 0">محمد</span>
+        <span class="numan male" style="margin: 0">نعمان</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: غير محدد</h3>
+      <h2>الأبناء</h2>
+      <span class="female">آية</span>
+      <span>محمد</span>
+      <span>يوسف</span>
+      <span>مصطفى</span>
+      <span class="female">مريم</span>
+    </div>
+
+    <div class="karam male box">
+      <h3>
+        الإسم : كرم
+        <span class="hesham male" style="margin: 0">هشام</span>
+        <span class="muhammad004 male" style="margin: 0">محمد</span>
+        <span class="halil male" style="margin: 0">خليل</span>
+        <span class="muhammad male" style="margin: 0">محمد</span>
+        <span class="numan male" style="margin: 0">نعمان</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: غير محدد</h3>
+      <h2>الأبناء</h2>
+      <span class="female">أماني</span>
+      <span class="female">أمل</span>
+      <span>كريم</span>
+      <span>أمير</span>
+    </div>
+
+    <div class="shakir male box">
+      <h3>
+        الإسم : شاكر
+        <span class="hesham male" style="margin: 0">هشام</span>
+        <span class="muhammad004 male" style="margin: 0">محمد</span>
+        <span class="halil male" style="margin: 0">خليل</span>
+        <span class="muhammad male" style="margin: 0">محمد</span>
+        <span class="numan male" style="margin: 0">نعمان</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: غير محدد</h3>
+      <h2>الأبناء</h2>
+      <span class="female">تهاني</span>
+      <span class="female">عبير</span>
+      <span>شادي</span>
+      <span class="female">ياسمين</span>
+    </div>
+
+    <div class="shukri male box">
+      <h3>
+        الإسم : شكري
+        <span class="hesham male" style="margin: 0">هشام</span>
+        <span class="muhammad004 male" style="margin: 0">محمد</span>
+        <span class="halil male" style="margin: 0">خليل</span>
+        <span class="muhammad male" style="margin: 0">محمد</span>
+        <span class="numan male" style="margin: 0">نعمان</span>
+        <span class="abdullah male" style="margin: 0">عبدالله</span>
+        <span class="nureldin male" style="margin: 0">نورالدين</span>
+      </h3>
+      <h3>اسم الزوجة: غير محدد</h3>
+      <h2>الأبناء</h2>
+      <span class="female">هبة</span>
+      <span class="female">همسة</span>
+      <span class="female">هديل</span>
+      <span>جهاد</span>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

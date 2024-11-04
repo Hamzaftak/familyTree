@@ -1,0 +1,50 @@
+body {
+  text-align: right;
+}
+
+h1,
+h3 {
+  text-align: center;
+}
+
+select {
+  font-size: 14pt;
+  text-align-last: center;
+}
+
+div {
+  align-content: center;
+  margin-bottom: 30pt;
+  font-size: 14pt;
+}
+
+p {
+  font-size: 16pt;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+span {
+  margin-left: 20pt;
+  margin-right: 20pt;
+  font-size: 18pt;
+}
+
+.box {
+  margin-top: 50pt;
+  margin-bottom: 50pt;
+  text-align: center;
+}
+
+.move {
+  margin-right: 40%;
+}
+
+span.male {
+  color: blue;
+  cursor: pointer;
+}
+
+.female {
+  color: purple;
+}
