@@ -48,3 +48,9 @@ span.male {
 .female {
   color: purple;
 }
+
+.firstBox {
+  margin-top: 50pt;
+  margin-bottom: 50pt;
+  text-align: center;
+}
